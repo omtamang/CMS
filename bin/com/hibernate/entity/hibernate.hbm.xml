@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--import DTD-->
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping>
+		
+		<class name="com.hibernate.entity.Sign" table="students">
+			
+			<id name="id" column="id">
+				<generator class="increment"></generator>
+			</id>
+			<property name="username" column="username"></property>
+			<property name="email" column="email"></property>
+			<property name="password" column="password"></property>
+			<property name="years" column="Years"></property>
+			<property name="course" column="Course"></property>
+			<property name="phone" column="phone"></property>
+			<property name="status" column="status"></property>
+			
+		</class>
+		
+		<class name="com.hibernate.entity.AdminSign" table="admin">
+			<id name="id" column="id">
+				<generator class="increment"></generator>
+			</id>
+			<property name="AdminName" column="AdminName"></property>
+			<property name="email" column="email"></property>
+			<property name="password" column="password"></property>
+		</class>
+		
+		<class name="com.hibernate.entity.TutorSign" table="tutors">
+			<id name="id" column="id">
+				<generator class="increment"></generator>
+			</id>
+			<property name="username" column="username"></property>
+			<property name="email" column="email"></property>
+			<property name="password" column="password"></property>
+			<property name="phone" column="phone"></property>
+			<property name="module" column="module"></property>
+		</class>
+		
+		<class name="com.hibernate.entity.Activitystore" table="activity">
+			<id name="id" column="id">
+				<generator class="increment"></generator>
+			</id>
+			<property name="activity" column="activity"></property>
+		</class>
+		
+	</hibernate-mapping>
