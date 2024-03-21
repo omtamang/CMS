@@ -265,7 +265,7 @@ public class Login extends JFrame {
 		});
 		lblCreateAccount.setForeground(Color.BLACK);
 		lblCreateAccount.setFont(new Font("Arial", Font.BOLD, 14));
-		lblCreateAccount.setBounds(103, 289, 108, 21);
+		lblCreateAccount.setBounds(111, 300, 108, 21);
 		panel.add(lblCreateAccount);
 		
 		JLabel lblNewLabel_5_2 = new JLabel("Welcome back");
